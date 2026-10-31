@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3f5f0">
+    <title>Vue 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="../views/views.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="viewer">
+      <div class="stage">
+        <img
+          id="map-image"
+          alt="Vue 3D"
+          draggable="false"
+          aria-describedby="drag-instructions"
+        >
+        <p id="error-message" role="alert" hidden></p>
+      </div>
+      <div class="controls">
+        <button id="rotation-button" type="button" disabled>
+          Mettre en rotation automatique
+        </button>
+        <span class="sr-only" id="drag-instructions">
+          Faites glisser la vue pour tourner le modèle.
+        </span>
+        <label class="sr-only" for="angle-slider">Angle de vue</label>
+        <input id="angle-slider" type="range" min="0" max="0" value="0" disabled>
+      </div>
+    </main>
+  </body>
+</html>
