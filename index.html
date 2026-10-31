@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#f3f5f0">
     <title>Vue 3D</title>
     <link rel="stylesheet" href="style.css">
-    <script src="../views/views.js" defer></script>
+    <script src="views/views.js" defer></script>
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -22,13 +22,18 @@
       </div>
       <div class="controls">
         <button id="rotation-button" type="button" disabled>
-          Mettre en rotation automatique
+          Rotation automatique
         </button>
         <span class="sr-only" id="drag-instructions">
           Faites glisser la vue pour tourner le modèle.
         </span>
         <label class="sr-only" for="angle-slider">Angle de vue</label>
         <input id="angle-slider" type="range" min="0" max="0" value="0" disabled>
+        <div class="language-switcher" role="group" aria-label="Langue">
+          <button class="language-button" type="button" data-language="fr" aria-label="Français" title="Français" aria-pressed="true">🇫🇷</button>
+          <button class="language-button" type="button" data-language="en" aria-label="English" title="English" aria-pressed="false">🇬🇧</button>
+          <button class="language-button" type="button" data-language="ko" aria-label="한국어" title="한국어" aria-pressed="false">🇰🇷</button>
+        </div>
       </div>
     </main>
   </body>
